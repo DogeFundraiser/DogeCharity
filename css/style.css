@@ -1,9 +1,8 @@
 * { 
 	box-sizing: border-box; 
 }
-
 body { 
-	font-family: "Comic Sans MS", "Comic Sans", "Lucida Grande", "Tahoma", sans-serif;
+	font-family: "Lucida Grande", "Tahoma", sans-serif;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -42,8 +41,8 @@ header {
 
 h1 { 
 	font-family: Comic Sans, Comic Sans MS; 
-	font-size: 2.5em; 
-	line-height: 1.25em;
+	font-size: 3em; 
+	line-height: 1.575em;
 	font-weight: 600; 
 	text-align: center;
 	margin: 0;
@@ -54,12 +53,6 @@ header img {
 	margin: 0 auto;
 	max-height: 40%;
 	max-width: 100%;
-}
-
-@-moz-document url-prefix() { 
-  header img {
-     max-height: 15em;
-  }
 }
 
 header h2 {
@@ -99,7 +92,7 @@ h2 {
 }
 
 .donate-type h2 {
-	font-size: 2.5em; 
+	font-size: 3em; 
 	margin: 0;
 }
 
@@ -109,21 +102,6 @@ h2 {
 	float: left;
 	text-align: center;
 }
-
-.doge-amounts {
-	border-radius: 0.3125em;
-	overflow: hidden;
-}
-
-
-.doge-amounts .button {
-	display: inline-block;
-	font-size: 0.8em;
-	padding: 0.3125em 0.625em;
-	background: #71ddf9;
-	margin: 0.15625em;
-}
-
 
 .donate-type {
 	width: 45%;
@@ -264,10 +242,6 @@ footer .container div,
 	float: left;
 }
 
-#page-content section {
-	width: 75%;
-}
-
 .left {
 	float: left;
 }
@@ -276,46 +250,28 @@ footer .container div,
 	float: right;
 }
 
-#page-content .center {
-	float: none;
-	margin: 0 auto;
-}
-
-.video-wrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-	margin-bottom: 1.25em;
-}
-.video-wrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
 
 .suchcurrency { 
 	font-weight: bold;
+}
+
+.centered {
 	text-align: center;
 }
 
-
 a {
-	color: #009640;
+	color: #2980b9;
 	text-decoration: none;
 	transition: color 0.5s;
 	-webkit-transition: color 0.5s;
 }
 
 a:visited {
-	color: #009640;
+	color: #8e44ad;
 }
 
 a:hover {
-	color: #fff;
+	color: #329fe8;
 	transition: color 0.5s;
 	-webkit-transition: color 0.5s;
 }
@@ -336,14 +292,6 @@ footer {
 
 footer a {
 	display: inline-block;
-}
-
-p.button {
-	margin: 0 0 5px 0;
-	padding: 10px 20px 10px 20px;
-}
-
-p.button a {
 }
 
 footer a img,
@@ -403,6 +351,7 @@ footer a:hover p {
 	            border-top-left-radius: 20px;
 	         border-bottom-left-radius: 20px;
 	background-color: #71ddf9;
+
 	position: relative;
 	overflow: hidden;
 }
@@ -574,6 +523,5 @@ footer a:hover p {
 	p.button {
 		max-width: 100%;
 		word-wrap: break-word;
-		margin: 0px;
 	}
 }
