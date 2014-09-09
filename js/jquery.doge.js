@@ -3,12 +3,10 @@
     //  such plugin
     $.doge = function(tings) {
         //  very jquery
-        var doge = $('body').css('font-family', 'Comic Sans MS, Comic Sans');
+        var doge = $('body').css('font-family', 'Comic Sans MS, Comic Sans, Chalkboard, cursive');
 
         //  much array
-        tings = $.extend(['doge', 'shibe', 'good deed', 'thankful', 'achieve', 'community', 'impossible possible',
-            'completion', 'yay', 'dogecoin', 'water well', 'drinking', 'clean water'
-        ], tings);
+        tings = $.extend(['doge', 'shibe', 'help', 'good deed', 'thankful', 'yay', 'dogecoin', 'well', 'drinking', 'water'], tings);
 
         var r = function(arr) {
             if (!arr) arr = tings;
@@ -32,8 +30,14 @@
         });
 
         setInterval(function() {
+
             $('<span style="position: absolute; display: none; left: ' + Math.random() * 100 + '%;top: ' + Math.random() * 100 + '%;font-size: ' + Math.max(24, (Math.random() * 50 + 50)) + 'px; color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');">' + r(dogefix) +
-            '</span>').appendTo('.such.overlay').fadeIn('fast').delay(800).fadeOut('fast');
-        }, 1000);
+<<<<<<< HEAD
+                '</span>').appendTo('.such.overlay').fadeIn('fast').delay(1000).fadeOut('fast');
+        }, 500);
+=======
+                '</span>').appendTo('.such.overlay').fadeIn('fast').delay(5000).fadeOut('fast');
+        }, 3000);
+>>>>>>> 4c354d6ac611cbd681f05a17684c7fbb3f74a3fa
     };
 })(jQuery);
