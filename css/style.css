@@ -99,12 +99,12 @@ h2 {
 .donate-type,
 .or {
 	box-sizing: border-box;
-	float: left;
+	float: center;
 	text-align: center;
 }
 
 .donate-type {
-	width: 45%;
+	width: 100%;
 }
 
 footer p:first-child,
