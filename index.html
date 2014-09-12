@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<head>
 		<title>Doge4Kashmir | A Dogecoin_PR initiative</title>
-		<meta name="description" content="Help us raise 2.5M DOGE for relief efforts after the Kashmir floods!">
+		<meta name="description" content="Help us raise 4M DOGE for relief efforts after the Kashmir floods!">
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
 		<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
@@ -42,8 +42,12 @@
 						<span class="manydoge" style="width: 0%"></span>
 					</div>
 					<p class="suchcurrency centered">
-						<span><span> of 4,000,000 <strike>2,500,000</strike> DOGE target donated so far!
+						<span><span> of 4,000,000 DOGE target donated so far!
 					</p>
+					<p class="suchcurrency centered">
+						<strong>We've beaten the initial target of 2.5M!</strong>
+					</p>
+					<
 				</div>
 				<div class="donate-type">	
 					<h2>Donate to Doge4Kashmir</h2>
@@ -135,7 +139,7 @@
 	 			$(".suchcurrency > span").text(Math.floor(data.query.results.body.p).toLocaleString() + $(".suchcurrency > span").text());
 	 			$(".suchcurrency").fadeIn();
 	 			percentage = (Math.floor(data.query.results.body.p) / target)*100;
-	 			$(".bar").width(percentage + "%");
+	 			$(".manydoge").width(percentage + "%");
 
 	 				$(".meter > span").each(function() {
 	 				$(this)
