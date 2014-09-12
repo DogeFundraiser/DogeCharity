@@ -32,6 +32,7 @@
 				<div id="meter-wrap">
 					<div class="meter nostripes">
 						<span class="manydoge" style="width: 0%"></span>
+						<div class="bar" style="width: 0%;"></div>
 					</div>
 					<p class="suchcurrency centered">
 						<span><span> of 2,500,000 DOGE target donated so far!
@@ -127,7 +128,7 @@
 	 			$(".suchcurrency > span").text(Math.floor(data.query.results.body.p).toLocaleString() + $(".suchcurrency > span").text());
 	 			$(".suchcurrency").fadeIn();
 	 			percentage = (Math.floor(data.query.results.body.p) / target)*100;
-	 			$(".manydoge").width(percentage + "%");
+	 			$(".bar").width(percentage + "%");
 
 	 				$(".meter > span").each(function() {
 	 				$(this)
